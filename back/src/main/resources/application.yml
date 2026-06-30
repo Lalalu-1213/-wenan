@@ -31,7 +31,7 @@ async:
 
 # 大模型API配置（OpenAI风格）
 openai:
-  api-key: 
+  api-key: #deepseek申请的api
   base-url: https://api.deepseek.com
   model: deepseek-v4-flash
   max-tokens: 2000
