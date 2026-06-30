@@ -30,6 +30,7 @@ async:
   thread-name-prefix: copywriting-async-
 
 # 大模型API配置（OpenAI风格）
+# 请填入你的 DeepSeek 或其他 OpenAI 兼容 API Key，不要提交真实 Key 到仓库
 openai:
   api-key: sk-your-api-key-here
   base-url: https://api.deepseek.com
