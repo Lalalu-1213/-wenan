@@ -1,0 +1,49 @@
+# ===========================
+# IDE & Editor
+# ===========================
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# ===========================
+# Claude Code
+# ===========================
+.claude/
+
+# ===========================
+# Backend (Java / Maven)
+# ===========================
+back/target/
+back/.env
+back/*.log
+back/logs/
+
+# Maven wrapper jar (keep the properties file)
+back/.mvn/wrapper/maven-wrapper.jar
+
+# ===========================
+# Frontend (Node.js / Vite)
+# ===========================
+front/node_modules/
+front/dist/
+front/.env
+front/.env.local
+front/.env.*.local
+front/npm-debug.log*
+front/yarn-debug.log*
+front/yarn-error.log*
+front/pnpm-debug.log*
+
+# ===========================
+# OS generated files
+# ===========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini

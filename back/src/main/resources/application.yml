@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: copywriting-assistant
+
+  # MySQL配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/copywriting_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&createDatabaseIfNotExist=true
+    username: root
+    password: 111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+# 异步任务线程池配置
+async:
+  core-pool-size: 10
+  max-pool-size: 50
+  queue-capacity: 200
+  thread-name-prefix: copywriting-async-
+
+# 大模型API配置（OpenAI风格）
+openai:
+  api-key: sk-3f4fda420d0d4d8488f180832b06a3b6
+  base-url: https://api.deepseek.com
+  model: deepseek-v4-flash
+  max-tokens: 2000
+  temperature: 0.7
+
+# 缓存配置
+cache:
+  copywriting:
+    expire-hours: 24
+    max-size: 1000
+
+# 批量处理配置
+batch:
+  max-size: 100
