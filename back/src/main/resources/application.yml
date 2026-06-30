@@ -31,7 +31,7 @@ async:
 
 # 大模型API配置（OpenAI风格）
 openai:
-  api-key: sk-3f4fda420d0d4d8488f180832b06a3b6
+  api-key: 
   base-url: https://api.deepseek.com
   model: deepseek-v4-flash
   max-tokens: 2000
